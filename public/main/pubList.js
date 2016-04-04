@@ -13,6 +13,7 @@ var phone_longtitude  = "20";    //경도
 function getList(){
     $.ajax({
         type:"POST",
+        async: false,
         url:'/api/main/getPublist',
         dataType:'json',
         data:{
