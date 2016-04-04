@@ -18,7 +18,8 @@
     "express-session":"*",
     "mysql":"*",
     "generic-pool":"*",
-    "passport" : "*"
+    "passport" : "*",
+    "sequelize" : "*"
 
   }
 }

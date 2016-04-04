@@ -7,7 +7,7 @@ var errors = require('./components/errors');/**
 module.exports = function(app) {
 
     // Insert api below
-    app.use('/api/memo', require('./api/memo'));
+    app.use('/api/main', require('./api/main'));
     app.use('/auth', require('./auth'));
 
     // All undefined asset or api api should return a 404

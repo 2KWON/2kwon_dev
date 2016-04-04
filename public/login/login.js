@@ -17,7 +17,7 @@ $('#loginSubmit').click(function () {
 
             if(data.result=='ok'){
                 alert('로그인 성공');
-                $(location).attr('href','/main/main.html');
+                $(location).attr('href','/main/pubList.html');
             }else{
                 alert('로그인 실패');
             }
