@@ -9,7 +9,7 @@ var pool = generic_pool.Pool({
     name: 'mysql',
     create: function(callback) {
         var config = {
-            host : 'localhost',
+            host : 'ec2-52-196-16-18.ap-northeast-1.compute.amazonaws.com',
             port : '3306',
             user : 'hwani163',
             password : '1234qwer',
