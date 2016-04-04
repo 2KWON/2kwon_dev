@@ -37,6 +37,7 @@ function getList(){
 function makeList(list){
     //alert(makeList);
     //$('#publist').empty();
+    console.log('makeListStart')
     var length = list.length;
     for(var i = 0; i<length; i++){
     var a ='<li class="list-item" data-ix="list-item">'+
@@ -48,7 +49,8 @@ function makeList(list){
         '</a>'+
         '</li>';
         $('#publist').append(a);
-    }
+    };
+    console.log('makeLIstEnd');
 
 }
 getList();
