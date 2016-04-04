@@ -2,12 +2,16 @@
  * Created by Seokhwan on 2016. 3. 19..
  */
 "use strict";
+var dev= JSON.parse(url)[0].dev;
+var dist= JSON.parse(url)[0].dist;
+var realUrl = dev;
+
 
 $('#loginSubmit').click(function () {
 
     $.ajax({
         type:"POST",
-        url:'/auth/login',
+        url:realUrl+'/auth/login',
         dataType:'json',
         data:{
             "email" : $('#email-field').val(),

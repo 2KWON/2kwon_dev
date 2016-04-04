@@ -2,6 +2,10 @@
  * Created by Seokhwan on 2016. 3. 30..
  */
 "use strict"
+var dev= JSON.parse(url)[0].dev;
+var dist= JSON.parse(url)[0].dist;
+var realUrl = dev;
+
 //목록 불러오기
 //위도 경도 임시로 지정함.
 //역의 코드로 리스트 load함
@@ -14,7 +18,7 @@ function getList(){
     $.ajax({
         type:"POST",
         async: false,
-        url:'/api/main/getPublist',
+        url:realUrl+'/api/main/getPublist',
         dataType:'json',
         data:{
             "latitude"   : phone_latitude,
